@@ -1,0 +1,25 @@
+------------------------------
+Host: https://google.com
+Success: 3
+Failed: 0
+Errors: 0
+Min: 1.329
+Max: 1.586
+Avg: 1.439
+------------------------------
+Host: https://ya.ru
+Success: 3
+Failed: 0
+Errors: 0
+Min: 1.103
+Max: 4.556
+Avg: 2.424
+------------------------------
+Host: https://jsonplaceholder.typicode.com/posts
+Success: 3
+Failed: 0
+Errors: 0
+Min: 0.560
+Max: 2.020
+Avg: 1.049
+------------------------------
