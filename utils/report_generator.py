@@ -30,9 +30,9 @@ class ReportGenerator:
             if data.response_times:
                 avg = sum(data.response_times) / len(data.response_times)
                 lines.extend([
-                    f"Min: {min(data.response_times):.3f}",
-                    f"Max: {max(data.response_times):.3f}",
-                    f"Avg: {avg:.3f}",
+                    f"Min: {min(data.response_times):.3f} s",
+                    f"Max: {max(data.response_times):.3f} s",
+                    f"Avg: {avg:.3f} s",
                 ])
                 
             lines.append(ReportGenerator.SEPARATOR)

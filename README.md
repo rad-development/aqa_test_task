@@ -81,7 +81,7 @@ https://jsonplaceholder.typicode.com/posts
 
 `python http_benchmark.py -H https://ya.ru,https://google.com -C 3`
 
-Загрузить хосты из файла `test_data/hosts.txt` и сохранить статистику по запросам в файл `test_results/report.txt`:
+Загрузить список хостов из файла `test_data/hosts.txt`, выполнить по 5 запросов к каждому хосту и сохранить отчёт в `test_results/report.txt`:
 
 `python http_benchmark.py -F test_data/hosts.txt -C 5 -O test_results/report.txt`
 
@@ -93,25 +93,25 @@ Host: https://google.com
 Success: 3
 Failed: 0
 Errors: 0
-Min: 1.231
-Max: 1.309
-Avg: 1.265
+Min: 1.231 s
+Max: 1.309 s
+Avg: 1.265 s
 ------------------------------
 Host: https://ya.ru
 Success: 3
 Failed: 0
 Errors: 0
-Min: 1.147
-Max: 1.157
-Avg: 1.153
+Min: 1.147 s
+Max: 1.157 s
+Avg: 1.153 s
 ------------------------------
 Host: https://jsonplaceholder.typicode.com/posts
 Success: 3
 Failed: 0
 Errors: 0
-Min: 0.535
-Max: 0.550
-Avg: 0.541
+Min: 0.535 s
+Max: 0.550 s
+Avg: 0.541 s
 ------------------------------
 ```
 Поля отчета
@@ -119,9 +119,9 @@ Avg: 0.541
 - Success — количество запросов с успешным HTTP-ответом.
 - Failed — количество запросов, на которые сервер ответил ошибкой (4xx или 5xx).
 - Errors — количество запросов, которые не удалось выполнить из-за ошибки соединения, таймаута и других исключений.
-- Min — минимальное время выполнения успешных запросов.
-- Max — максимальное время выполнения успешных запросов.
-- Avg — среднее время выполнения успешных запросов.
+- Min — минимальное время выполнения успешных запросов, в секундах.
+- Max — максимальное время выполнения успешных запросов, в секундах.
+- Avg — среднее время выполнения успешных запросов, в секундах.
 
 ## Структура проекта
 
